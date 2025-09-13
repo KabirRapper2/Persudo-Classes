@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Basic Selectors */
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            margin: 10px 0;
+        }
+
+        /* Pseudo-Classes */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        button:focus {
+            outline: 2px solid #007bff;
+        }
+
+        /* Pseudo-Elements */
+        li::before {
+            content: "• ";
+            color: #666;
+        }
+
+        .done::before {
+            content: "✓ ";
+            color: green;
+        }
+
+        /* Combinators & Attributes */
+        div>span {
+            color: blue;
+        }
+
+        [data-type="note"] {
+            background: #fff3e0;
+            padding: 8px;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body class="container">
+
+    <p>This is a <a href="#">link</a>.</p>
+    <button tabindex="0">Focus Me</button>
+    <input type="text" placeholder="Enter text">
+
+    <ul>
+        <li>Item 1</li>
+        <li class="done">Completed</li>
+    </ul>
+
+    <div>
+        <span>Nested Text</span>
+    </div>
+
+    <div data-type="note">
+        This is a note!
+    </div>
+</body>
+
+</html>
