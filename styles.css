@@ -1,0 +1,58 @@
+/* Links */
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:active {
+    color: orange;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    border: none;
+    background: gray;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: blue;
+}
+
+button:active {
+    background: darkblue;
+}
+
+/* Form */
+input:focus {
+    border: 2px solid dodgerblue;
+    outline: none;
+}
+
+input:checked+label {
+    color: green;
+    font-weight: bold;
+}
+
+/* List */
+ul li:first-child {
+    color: red;
+}
+
+ul li:nth-child(2) {
+    color: green;
+}
+
+ul li:last-child {
+    color: blue;
+}
